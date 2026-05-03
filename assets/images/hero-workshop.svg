@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1f1a"/>
+      <stop offset="50%" stop-color="#2d3a2d"/>
+      <stop offset="100%" stop-color="#0f1410"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4a574" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7a6249" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grain" patternUnits="userSpaceOnUse" width="100" height="100">
+      <circle cx="20" cy="20" r="0.5" fill="#fff" opacity="0.05"/>
+      <circle cx="60" cy="40" r="0.5" fill="#fff" opacity="0.04"/>
+      <circle cx="80" cy="80" r="0.5" fill="#fff" opacity="0.05"/>
+      <circle cx="40" cy="70" r="0.5" fill="#fff" opacity="0.03"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grain)"/>
+
+  <!-- Atmospheric glow -->
+  <ellipse cx="1200" cy="200" rx="500" ry="300" fill="url(#sun)"/>
+
+  <!-- Distant pine silhouettes (Florida pine forest hint) -->
+  <g opacity="0.35" fill="#0a0e0a">
+    <polygon points="100,700 130,500 160,700"/>
+    <polygon points="180,720 220,480 260,720"/>
+    <polygon points="280,710 310,520 340,710"/>
+    <polygon points="380,700 420,490 460,700"/>
+    <polygon points="480,720 510,510 540,720"/>
+    <polygon points="1100,710 1140,500 1180,710"/>
+    <polygon points="1200,720 1230,510 1260,720"/>
+    <polygon points="1300,700 1340,480 1380,700"/>
+    <polygon points="1420,720 1450,520 1480,720"/>
+  </g>
+
+  <!-- Ground line -->
+  <rect x="0" y="700" width="1600" height="200" fill="#0a0e0a" opacity="0.6"/>
+
+  <!-- Centered tool composition -->
+  <g transform="translate(800, 450)">
+    <!-- Hammer -->
+    <g transform="rotate(-20)">
+      <rect x="-200" y="-15" width="280" height="30" rx="4" fill="#5a4a3a" stroke="#3a2f24" stroke-width="2"/>
+      <rect x="60" y="-50" width="100" height="100" rx="6" fill="#2a2a2a" stroke="#1a1a1a" stroke-width="2"/>
+      <rect x="155" y="-30" width="40" height="60" rx="4" fill="#1a1a1a"/>
+    </g>
+    <!-- Wrench -->
+    <g transform="rotate(25)">
+      <rect x="-180" y="-12" width="260" height="24" rx="3" fill="#4a4a4a" stroke="#2a2a2a" stroke-width="2"/>
+      <circle cx="80" cy="0" r="35" fill="#4a4a4a" stroke="#2a2a2a" stroke-width="2"/>
+      <circle cx="80" cy="0" r="18" fill="#1a1f1a"/>
+      <rect x="-180" y="-12" width="20" height="24" rx="3" fill="#3a3a3a"/>
+    </g>
+  </g>
+
+  <!-- Subtle texture overlay -->
+  <rect width="1600" height="900" fill="url(#grain)" opacity="0.5"/>
+</svg>

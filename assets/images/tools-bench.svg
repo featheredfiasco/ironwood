@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a4a3a"/>
+      <stop offset="100%" stop-color="#1a221a"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a6a4a"/>
+      <stop offset="100%" stop-color="#5a4030"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg2)"/>
+
+  <!-- Wooden workbench surface -->
+  <rect x="0" y="400" width="1200" height="400" fill="url(#wood)"/>
+
+  <!-- Wood grain lines -->
+  <g stroke="#3a2818" stroke-width="1" opacity="0.4" fill="none">
+    <path d="M0,440 Q300,438 600,442 T1200,440"/>
+    <path d="M0,490 Q300,488 600,492 T1200,490"/>
+    <path d="M0,540 Q300,538 600,542 T1200,540"/>
+    <path d="M0,600 Q300,598 600,602 T1200,600"/>
+    <path d="M0,670 Q300,668 600,672 T1200,670"/>
+    <path d="M0,730 Q300,728 600,732 T1200,730"/>
+  </g>
+
+  <!-- Atmospheric light -->
+  <ellipse cx="600" cy="200" rx="500" ry="200" fill="#e8d8a8" opacity="0.15"/>
+
+  <!-- Tools laid out on bench -->
+
+  <!-- Tape measure -->
+  <g transform="translate(200, 480)">
+    <rect x="0" y="0" width="120" height="80" rx="12" fill="#2a3a2a" stroke="#1a1a1a" stroke-width="2"/>
+    <rect x="10" y="10" width="100" height="60" rx="6" fill="#3a4a3a"/>
+    <rect x="50" y="-15" width="20" height="20" fill="#e8d878" stroke="#3a3a3a" stroke-width="1.5"/>
+    <text x="60" y="50" text-anchor="middle" fill="#e8e8e8" font-family="Arial" font-size="14" font-weight="bold">25ft</text>
+  </g>
+
+  <!-- Level -->
+  <g transform="translate(400, 510)">
+    <rect x="0" y="0" width="400" height="40" rx="4" fill="#d4a020" stroke="#8a6818" stroke-width="2"/>
+    <circle cx="100" cy="20" r="14" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+    <circle cx="100" cy="20" r="8" fill="#7ab854"/>
+    <circle cx="200" cy="20" r="14" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+    <circle cx="200" cy="20" r="8" fill="#7ab854"/>
+    <circle cx="300" cy="20" r="14" fill="#fff" stroke="#3a3a3a" stroke-width="1.5"/>
+    <circle cx="300" cy="20" r="8" fill="#7ab854"/>
+  </g>
+
+  <!-- Pencil -->
+  <g transform="translate(420, 600) rotate(-8)">
+    <rect x="0" y="0" width="180" height="14" fill="#e8c878" stroke="#3a3a3a" stroke-width="1.5"/>
+    <polygon points="180,0 200,7 180,14" fill="#3a3a3a"/>
+    <rect x="-25" y="0" width="25" height="14" fill="#c84020"/>
+  </g>
+
+  <!-- Utility knife -->
+  <g transform="translate(700, 590) rotate(15)">
+    <rect x="0" y="0" width="160" height="35" rx="4" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="1.5"/>
+    <rect x="155" y="10" width="40" height="15" fill="#e0e0e0" stroke="#8a8a8a" stroke-width="1"/>
+  </g>
+
+  <!-- Screws/nails scattered -->
+  <g fill="#7a7a7a" stroke="#3a3a3a" stroke-width="0.5">
+    <circle cx="900" cy="500" r="4"/>
+    <circle cx="920" cy="510" r="4"/>
+    <circle cx="940" cy="498" r="4"/>
+    <circle cx="910" cy="525" r="4"/>
+    <circle cx="935" cy="525" r="4"/>
+  </g>
+
+  <!-- Small light glow -->
+  <circle cx="600" cy="100" r="8" fill="#fff8d4" opacity="0.6"/>
+  <circle cx="600" cy="100" r="20" fill="#fff8d4" opacity="0.2"/>
+</svg>

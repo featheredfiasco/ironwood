@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7ab8c4"/>
+      <stop offset="60%" stop-color="#a8d0d8"/>
+      <stop offset="100%" stop-color="#d4e4e4"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a8a9a"/>
+      <stop offset="100%" stop-color="#2a5a6a"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8d8b8"/>
+      <stop offset="100%" stop-color="#c8b890"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="500" fill="url(#sky)"/>
+
+  <!-- Sun -->
+  <circle cx="950" cy="180" r="60" fill="#fff5d4" opacity="0.7"/>
+  <circle cx="950" cy="180" r="40" fill="#fff8e0"/>
+
+  <!-- Water (emerald coast turquoise) -->
+  <rect x="0" y="450" width="1200" height="180" fill="url(#water)"/>
+  <rect x="0" y="450" width="1200" height="180" fill="#5fb3a8" opacity="0.5"/>
+
+  <!-- Sand -->
+  <rect x="0" y="600" width="1200" height="200" fill="url(#sand)"/>
+
+  <!-- Coastal house -->
+  <g transform="translate(400, 280)">
+    <!-- Stilts -->
+    <rect x="20" y="180" width="12" height="120" fill="#8a7a6a"/>
+    <rect x="180" y="180" width="12" height="120" fill="#8a7a6a"/>
+    <rect x="340" y="180" width="12" height="120" fill="#8a7a6a"/>
+
+    <!-- Main house body -->
+    <rect x="0" y="80" width="380" height="140" fill="#f5f0e8" stroke="#3a3a3a" stroke-width="2"/>
+
+    <!-- Roof -->
+    <polygon points="-20,80 190,0 400,80" fill="#5a6a7a" stroke="#3a3a3a" stroke-width="2"/>
+
+    <!-- Windows -->
+    <rect x="40" y="110" width="60" height="70" fill="#7ab8c4" stroke="#3a3a3a" stroke-width="2"/>
+    <line x1="70" y1="110" x2="70" y2="180" stroke="#3a3a3a" stroke-width="1.5"/>
+    <line x1="40" y1="145" x2="100" y2="145" stroke="#3a3a3a" stroke-width="1.5"/>
+
+    <rect x="160" y="110" width="60" height="70" fill="#7ab8c4" stroke="#3a3a3a" stroke-width="2"/>
+    <line x1="190" y1="110" x2="190" y2="180" stroke="#3a3a3a" stroke-width="1.5"/>
+    <line x1="160" y1="145" x2="220" y2="145" stroke="#3a3a3a" stroke-width="1.5"/>
+
+    <rect x="280" y="110" width="60" height="70" fill="#7ab8c4" stroke="#3a3a3a" stroke-width="2"/>
+    <line x1="310" y1="110" x2="310" y2="180" stroke="#3a3a3a" stroke-width="1.5"/>
+    <line x1="280" y1="145" x2="340" y2="145" stroke="#3a3a3a" stroke-width="1.5"/>
+
+    <!-- Deck/balcony rail -->
+    <rect x="-10" y="220" width="400" height="6" fill="#8a7a6a"/>
+    <g fill="#8a7a6a">
+      <rect x="0" y="226" width="3" height="20"/>
+      <rect x="40" y="226" width="3" height="20"/>
+      <rect x="80" y="226" width="3" height="20"/>
+      <rect x="120" y="226" width="3" height="20"/>
+      <rect x="160" y="226" width="3" height="20"/>
+      <rect x="200" y="226" width="3" height="20"/>
+      <rect x="240" y="226" width="3" height="20"/>
+      <rect x="280" y="226" width="3" height="20"/>
+      <rect x="320" y="226" width="3" height="20"/>
+      <rect x="360" y="226" width="3" height="20"/>
+    </g>
+  </g>
+
+  <!-- Sea oats / beach grass -->
+  <g stroke="#9a8a6a" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M100,640 Q105,610 110,615" />
+    <path d="M120,650 Q125,615 130,620" />
+    <path d="M140,645 Q142,605 148,610" />
+    <path d="M900,645 Q905,610 910,615" />
+    <path d="M930,650 Q933,615 940,620" />
+    <path d="M960,640 Q965,605 972,612" />
+    <path d="M1050,650 Q1055,615 1062,620" />
+  </g>
+
+  <!-- Subtle waves -->
+  <g stroke="#fff" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M0,520 Q100,515 200,520 T400,520 T600,520 T800,520 T1000,520 T1200,520"/>
+    <path d="M0,560 Q100,555 200,560 T400,560 T600,560 T800,560 T1000,560 T1200,560"/>
+  </g>
+</svg>
